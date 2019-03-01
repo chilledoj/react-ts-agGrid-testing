@@ -5,6 +5,8 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import { LinkContainer } from "react-router-bootstrap";
 
+import "./styles/app.scss";
+
 function Index() {
   return <h2>Home</h2>;
 }
@@ -31,7 +33,7 @@ class AppRouter extends React.Component<IProps> {
   render() {
     return (
       <Router>
-        <div>
+        <div style={{ height: "100%" }}>
           <Navbar bg="dark" variant="dark">
             <Navbar.Brand href="/">Test</Navbar.Brand>
             <Nav className="mr-auto">
